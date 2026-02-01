@@ -13,7 +13,17 @@ swift run
 
 # Build for release
 swift build -c release
+
+# Install to /Applications (after release build)
+cp .build/release/FinansApp FinansApp.app/Contents/MacOS/FinansApp
+cp -r FinansApp.app /Applications/
 ```
+
+## Requirements
+
+- macOS 14+ (Sonoma)
+- Swift 5.9+
+- No external dependencies (uses system SQLite3 and Swift Charts)
 
 ## Architecture
 
@@ -64,3 +74,10 @@ FinansApp is a macOS personal finance application built with SwiftUI. It parses 
 ## Localization
 
 UI is in Turkish. Currency format: TRY (₺).
+
+## Important Patterns
+
+- **Sheet presentation**: Use `sheet(item:)` pattern instead of `sheet(isPresented:)` when passing data to sheets
+- **Chart interaction**: Use `chartOverlay` with `GeometryReader` for hover detection (not `chartAngleSelection`)
+- **Bulk operations**: DatabaseService has optimized bulk methods (`updateTransactionsCategoryBulk`, `deleteTransactionsBulk`)
+- **Color extension**: `Color(hex:)` is defined in DashboardView.swift - don't duplicate
