@@ -1,0 +1,26 @@
+# Build
+.build/
+DerivedData/
+
+# macOS
+.DS_Store
+*.xcuserstate
+
+# Xcode
+xcuserdata/
+*.xcworkspace
+
+# App bundle (generated)
+FinansApp.app/
+
+# Swift Package Manager
+.swiftpm/
+Package.resolved
+
+# IDE
+.idea/
+*.sublime-*
+.vscode/
+
+# Scratchpad
+scratchpad/
