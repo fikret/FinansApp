@@ -27,18 +27,11 @@ Derlemek istemiyorsanız, hazır derlenmiş versiyonu indirin:
 
 ## Ekran Görüntüleri
 
-```
-┌─────────────────────────────────────────────────────┐
-│  Dashboard                                          │
-├─────────────────────────────────────────────────────┤
-│  ┌──────────────┐  ┌──────────────┐                │
-│  │  Toplam      │  │  İşlem       │                │
-│  │  ₺45,000     │  │  156         │                │
-│  └──────────────┘  └──────────────┘                │
-│                                                     │
-│  [Pasta Grafik]        [Bar Grafik]                │
-└─────────────────────────────────────────────────────┘
-```
+### Dashboard
+![Dashboard](screenshots/finnsapp-dashboard.png)
+
+### Ay Karşılaştırma
+![Karşılaştırma](screenshots/finansapp-compare.png)
 
 ## Kurulum
 
