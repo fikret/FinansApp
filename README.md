@@ -2,6 +2,19 @@
 
 macOS için kredi kartı ekstre analiz uygulaması. AI destekli PDF okuma ile harcamalarınızı otomatik kategorize edin ve analiz edin.
 
+## Hızlı Başlangıç (Hazır İndir)
+
+Derlemek istemiyorsanız, hazır derlenmiş versiyonu indirin:
+
+1. [Releases](https://github.com/fikret/FinansApp/releases/latest) sayfasından `FinansApp.zip` dosyasını indirin
+2. Zip dosyasını açın
+3. `FinansApp.app` dosyasını `/Applications` klasörüne sürükleyin
+4. Uygulamayı açın (ilk açılışta sağ tıklayıp "Aç" seçin)
+5. [Google AI Studio](https://aistudio.google.com/app/apikey)'dan ücretsiz API anahtarı alın
+6. Anahtarı uygulamaya girin ve ekstre PDF'lerinizi yüklemeye başlayın!
+
+> **Not**: macOS Gatekeeper uyarısı çıkarsa, System Settings > Privacy & Security'den uygulamaya izin verin.
+
 ## Özellikler
 
 - **PDF Ekstre Okuma**: Kredi kartı ekstrelerini AI ile otomatik analiz (OpenAI GPT-4o veya Google Gemini)
